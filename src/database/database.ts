@@ -11,6 +11,7 @@ const saltOrRounds: number = 10;
 async function connect(): Promise<Pool> {
 
     const connection = await createPool({
+        port: Number(process.env.DB_PORT),
         host: process.env.HOST,
         user: process.env.USER,
         password: process.env.PASSWORD,

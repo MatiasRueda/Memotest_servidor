@@ -18,6 +18,6 @@ Para poder utilizarlo el proyecto es necesario tener una conexión a un server y
 npm run dev
 ```
 En caso de querer ver la pagina con server incluido y poder jugar: https://gleaming-pudding-4d279d.netlify.app
-```markdown
+
 > [!NOTE]
 > Tanto el server como la base de datos pueden ser lentas. Porfavor tener paciencia.

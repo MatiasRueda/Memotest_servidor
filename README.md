@@ -20,4 +20,4 @@ npm run dev
 En caso de querer ver la pagina con server incluido y poder jugar: https://gleaming-pudding-4d279d.netlify.app
 
 > [!NOTE]
-> Tanto el server como la base de datos pueden ser lentas. Porfavor tener paciencia.
+> Tanto el server como la base de datos pueden ser lentas. Porfavor tenga paciencia.

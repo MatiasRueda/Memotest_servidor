@@ -12,6 +12,38 @@ Proyecto realizado únicamente por mi.
   - Express
   - MySQL
 
+## Estructura
+
+```
+Memotest_servidor
+├─ .gitignore
+├─ package-lock.json
+├─ package.json
+├─ README.md
+├─ src
+│  ├─ auxiliar
+│  │  ├─ mensaje.ts
+│  │  ├─ path.ts
+│  │  ├─ tabla.ts
+│  │  └─ type.ts
+│  ├─ controller
+│  │  ├─ get.controllers.ts
+│  │  ├─ post.controllers.ts
+│  │  └─ put.controllers.ts
+│  ├─ database
+│  │  ├─ database.ts
+│  │  └─ peticion.ts
+│  ├─ express.ts
+│  ├─ index.ts
+│  └─ route
+│     ├─ get.routes.ts
+│     ├─ post.routes.ts
+│     └─ put.routes.ts
+├─ tsconfig.json
+└─ tsconfig.spec.json
+
+```
+
 ## Instalación
 Para poder utilizarlo el proyecto es necesario tener una conexión a un server y aplicar el siguiente comando:
 ```

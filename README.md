@@ -5,8 +5,8 @@
 Proyecto personal para aplicar mis conocimientos en Express y MySQL.
 El server permite ingresar, registrar y actualizar a los jugadores que pueden o podrán participar en el memotest.
 
-## Personas Contribuyentes
-Proyecto realizado únicamente por mi.
+## Tipo de proyecto
+Proyecto individual.
 
 ## Tecnologías utilizadas
   - Express

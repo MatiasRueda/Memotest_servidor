@@ -6,7 +6,7 @@
 Proyecto personal para aplicar mis conocimientos en Express y MySQL.</br>
 La API le otorga a los usuarios las principales acciones para que estos puedan jugar al memotest. Como por ejemplo la posibilidad de agregar a una base de datos a un usuario nuevo, validar si un usuario a sido registrado o no para así poder ingresar, actualizar los puntajes y la posibilidad de obtener los usuarios que mas puntaje tienen.
 
-## Tabla de contenido  <a id="Tabla-de-contenido"/>
+## Tabla de contenido  <a id="Tabla-de-contenido"></a>
 * [Introducción](#Introduccion)
 * [Tipo de proyecto](#Tipo-de-proyecto)
 * [Tabla de contenido](#Tabla-de-contenido)

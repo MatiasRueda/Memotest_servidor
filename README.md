@@ -88,14 +88,15 @@ Para poder utilizar el proyecto es necesario tener una conexión a una base de d
 npm run dev
 ```
 
-> [!Note]
-> Tanto el server como la base de datos pueden ser lentas. Por favor tenga paciencia.
-
 **En linea**: </br>
 En caso de querer utilizarla en linea dirigirse a la siguiente dirección:
 ```
 memotest-fy45.onrender.com
 ```
+
+> [!Note]
+> Tanto el server como la base de datos pueden ser lentas. Por favor tenga paciencia.
+
 </br>
 
 ## Peticiones

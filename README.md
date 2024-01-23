@@ -10,9 +10,9 @@ La API le otorga a los usuarios las principales acciones para que estos puedan j
 * [Introducción](#Introducción)
 * [Tipo de proyecto](#Tipo-de-proyecto)
 * [Tabla de contenido](#Tabla-de-contenido)
-* [Tecnologías utilizadas](#Tecnologias-utilizadas)
+* [Tecnologías utilizadas](#Tecnologías-utilizadas)
 * [Estructura](#Estructura)
-* [Instalación](#Instalacion)
+* [Instalación](#Instalación)
 * [Uso](#Uso)
 * [Peticiones](#Peticiones)
 

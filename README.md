@@ -200,7 +200,7 @@ En este caso **dato** es de tipo **Usuario[]**  ( tipo <a href="#usuario">Usuari
 
 </br>
 
-### Post
+### POST
 #### Ingresar usuario
 **Endpoint**: "ingresar" </br>
 Un usuario puede recuperar sus datos

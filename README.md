@@ -1,4 +1,3 @@
-
 # Memotest server
 ![Static Badge](https://img.shields.io/badge/Estado%20-%20Terminado%20-%20green)
 
@@ -68,7 +67,7 @@ Memotest_servidor
 </br>
 
 ## Instalación
-Es necesario instalar nodeJS, para eso es necesario ir a la siguiente pagina y descargarlo:
+Es necesario instalar NodeJS, para eso es necesario ir a la siguiente pagina y descargarlo:
 https://nodejs.org/en </br>
 
 Una vez clonado el repositorio o descargado el zip ( y después de extraerlo ). 
@@ -95,11 +94,20 @@ npm run dev
 **En linea**: </br>
 En caso de querer utilizarla en linea dirigirse a la siguiente dirección:
 ```
-https://memotest-fy45.onrender.com
+memotest-fy45.onrender.com
 ```
 </br>
 
 ## Peticiones
+Puede utilizar programas como PostMan , ThunderClient o el navegador ( en caso de que lo este utilizando la API en linea ).  
+Para poder realizar las peticiones debe seguir el siguiente el siguiente patrón:
+```
+https://{api}/{endpoint}
+```
+Por ejemplo en caso de estar utilizando en linea y querer obtener los usuarios:
+```
+https://memotest-fy45.onrender.com/usuarios
+```
 
 ### Tipo de datos
 Distintos tipos de datos que se manejan en todo el proyecto

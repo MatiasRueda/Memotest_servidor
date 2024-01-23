@@ -6,6 +6,8 @@
 Proyecto personal para aplicar mis conocimientos en Express y MySQL.</br>
 La API le otorga a los usuarios las principales acciones para que estos puedan jugar al memotest. Como por ejemplo la posibilidad de agregar a una base de datos a un usuario nuevo, validar si un usuario a sido registrado o no para así poder ingresar, actualizar los puntajes y la posibilidad de obtener los usuarios que mas puntaje tienen.
 
+</br>
+
 ## Tabla de contenido
 * [Introducción](#Introducción)
 * [Tipo de proyecto](#Tipo-de-proyecto)
@@ -16,14 +18,20 @@ La API le otorga a los usuarios las principales acciones para que estos puedan j
 * [Uso](#Uso)
 * [Peticiones](#Peticiones)
 
+</br>
 
 ## Tipo de proyecto
 Proyecto individual.
 
+</br>
+
 ## Tecnologías utilizadas
   - Express
+  - TypeScript
   - MySQL
   - NodeJS
+
+</br>
 
 ## Estructura
 
@@ -57,6 +65,8 @@ Memotest_servidor
 
 ```
 
+</br>
+
 ## Instalación
 Es necesario instalar nodeJS, para eso es necesario ir a la siguiente pagina y descargarlo:
 https://nodejs.org/en </br>
@@ -67,6 +77,8 @@ Abrir la terminal en la carpeta donde se clono ( o se extrajo ) y escribir el si
 npm i
 ```
 Esto instalara las dependencias que el proyecto necesita
+
+</br>
 
 ## Uso
 Hay dos formas de usar la API: </br>
@@ -85,13 +97,14 @@ En caso de querer utilizarla en linea dirigirse a la siguiente dirección:
 ```
 https://memotest-fy45.onrender.com
 ```
+</br>
 
 ## Peticiones
 
 ### Tipo de datos
 Distintos tipos de datos que se manejan en todo el proyecto
 
-#### Usuario<a id="usuario"/>
+#### Usuario
 Propiedad | Tipo| Descripción
 -------- | ---- | ------
 `id` | int | Es el identificador del usuario. 
@@ -100,7 +113,7 @@ Propiedad | Tipo| Descripción
 `maxPuntaje` | int | El numero máximo que se alcanzo en el juego. 
 `reglas` | int | Valor entre 0 o 1 para saber si mostrar las reglas. 
 
-#### Respuesta<a id="respuesta"/>
+#### Respuesta
 
 Propiedad | Tipo| Descripción
 -------- | ---- |  -----------
@@ -128,11 +141,13 @@ En caso de ocurrir algún error se enviara el siguiente Json ( tipo <a href="#re
 ```
 > Es solo un ejemplo el mensaje de error puede variar
 
+</br>
+
 ###  GET
 ####  Obtener usuarios
-**Endpoint**: "/usuarios" </br>
+**Endpoint**: "usuarios" </br>
 Se obtiene los primeros 5 usuarios con puntaje mas alto </br>
-En caso de que todo haya salido bien se tendrá una respuesta de este estilo
+En caso de que todo haya salido bien se tendrá una respuesta de este estilo:
 ```json
 {
 	"exito": true,
@@ -170,11 +185,15 @@ En caso de que todo haya salido bien se tendrá una respuesta de este estilo
 	]
 }
 ```
+> Es solo un ejemplo la cantidad de usuario enviados puede variar
+
 En este caso **dato** es de tipo **Usuario[]**  ( tipo <a href="#usuario">Usuario</a> )
+
+</br>
 
 ### Post
 #### Ingresar usuario
-**Endpoint**: "/ingresar" </br>
+**Endpoint**: "ingresar" </br>
 Un usuario puede recuperar sus datos
 El Request Body que se debe enviar:
 ```json
@@ -183,14 +202,35 @@ El Request Body que se debe enviar:
 	"contrasenia": "123456789"	
 }
 ```
+>Es solo un ejemplo los valores del Request Body pueden variar
+
 Propiedad | Tipo| Requerido |Descripción
 -------- | ---- | :------: | -----------
 `nombre` | String |  ✔ |Identificador para que vean los demás usuarios.
 `contrasenia` | String |  ✔ | Contraseña ingresada por el fue usuario.
 
+En caso de que todo haya salido bien se tendrá una respuesta de este estilo:
+
+```json
+{
+	"exito": true,
+	"mensaje": "Usuario logueado correctamente"
+	"dato": {
+		"id": 1,
+	    "nombre": "Matias",
+	    "maxPuntaje": 100,
+	    "reglas": 0
+	}	
+}
+```
+>Es solo un ejemplo el mensaje puede variar,  al igual que la información del usuario
+
+En este caso **dato** es de tipo **Usuario**  ( tipo <a href="#usuario">Usuario</a> )
+
+</br>
 
 #### Registrar usuario
-**Endpoint**: "/registrar" </br>
+**Endpoint**: "registrar" </br>
 Un usuario ingresa a la base datos
 El Request Body que se debe enviar:
 ```json
@@ -200,15 +240,28 @@ El Request Body que se debe enviar:
 	"confirContrasenia": "123456789"	
 }
 ```
+>Es solo un ejemplo los valores del Request Body pueden variar
+
 Propiedad | Tipo| Requerido | Descripción
 -------- | ---- | :------: | -----------
 `nombre` | String |  ✔ | Identificador para que vean los demás usuarios.
 `contrasenia` | String |  ✔ | Contraseña ingresada por el fue usuario.
 `confirContrasenia` | String |  ✔ | Contraseña utilizada para validar la "contrasenia".
 
+En caso de que todo haya salido bien se tendrá una respuesta de este estilo:
+```json
+{
+	"exito": true,
+	"mensaje": "Datos actualizados",
+}
+```
+>Es solo un ejemplo el mensaje puede variar
+
+</br>
+
 ### PUT
 #### Actualizar usuario
-**Endpoint**: "/actualizar" </br>
+**Endpoint**: "actualizar" </br>
 Modifica los valores maxPuntaje o reglas del Usuario
 El Request Body que se debe enviar:
 ```json
@@ -219,9 +272,20 @@ El Request Body que se debe enviar:
 	"reglas": 0
 }
 ```
+>Es solo un ejemplo los valores del Request Body pueden variar
+
 Propiedad | Tipo | Requerido | Descripción
 -------- | ---- | :------: | ------
 `id` | int | ✔ |  Es el identificador del usuario. 
 `nombre` | Boolean |  ✔ | Identificador para que vean los demas usuarios.
 `maxPuntaje` | int |  ✔ | El numero máximo que se alcanzo en el juego. 
 `reglas` | int | ✔ |  Valor entre 0 o 1 para saber si mostrar las reglas. 
+
+En caso de que todo haya salido bien se tendrá una respuesta de este estilo:
+```json
+{
+	"exito": true,
+	"mensaje": "Datos actualizados",
+}
+```
+>Es solo un ejemplo el mensaje puede variar

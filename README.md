@@ -2,12 +2,12 @@
 # Memotest server
 ![Static Badge](https://img.shields.io/badge/Estado%20-%20Terminado%20-%20green)
 
-## Introducción <a id="Introduccion"></a>
+## Introducción
 Proyecto personal para aplicar mis conocimientos en Express y MySQL.</br>
 La API le otorga a los usuarios las principales acciones para que estos puedan jugar al memotest. Como por ejemplo la posibilidad de agregar a una base de datos a un usuario nuevo, validar si un usuario a sido registrado o no para así poder ingresar, actualizar los puntajes y la posibilidad de obtener los usuarios que mas puntaje tienen.
 
-## Tabla de contenido  <a id="Tabla-de-contenido"></a>
-* [Introducción](#Introduccion)
+## Tabla de contenido
+* [Introducción](#Introducción)
 * [Tipo de proyecto](#Tipo-de-proyecto)
 * [Tabla de contenido](#Tabla-de-contenido)
 * [Tecnologías utilizadas](#Tecnologias-utilizadas)
@@ -17,15 +17,15 @@ La API le otorga a los usuarios las principales acciones para que estos puedan j
 * [Peticiones](#Peticiones)
 
 
-## Tipo de proyecto <a id="Tipo-de-proyecto"></a>
+## Tipo de proyecto
 Proyecto individual.
 
-## Tecnologías utilizadas <a id="Tecnologias-utilizadas"></a>
+## Tecnologías utilizadas
   - Express
   - MySQL
   - NodeJS
 
-## Estructura  <a id="Estructura"></a>
+## Estructura
 
 ```
 Memotest_servidor
@@ -57,7 +57,7 @@ Memotest_servidor
 
 ```
 
-## Instalación  <a id="Instalacion"></a>
+## Instalación
 Es necesario instalar nodeJS, para eso es necesario ir a la siguiente pagina y descargarlo:
 https://nodejs.org/en </br>
 
@@ -68,7 +68,7 @@ npm i
 ```
 Esto instalara las dependencias que el proyecto necesita
 
-## Uso <a id="Uso"></a>
+## Uso
 Hay dos formas de usar la API: </br>
 **Local**: </br>
 
@@ -86,7 +86,7 @@ En caso de querer utilizarla en linea dirigirse a la siguiente dirección:
 https://memotest-fy45.onrender.com
 ```
 
-## Peticiones  <a id="Peticiones"></a>
+## Peticiones
 
 ### Tipo de datos
 Distintos tipos de datos que se manejan en todo el proyecto
